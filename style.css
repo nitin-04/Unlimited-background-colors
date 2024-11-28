@@ -8,7 +8,7 @@ h1 {
     color: #000000;
     text-decoration: solid;
     margin-bottom: 50px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 body {
@@ -20,9 +20,15 @@ body {
     /* transition: background-color 2s ease; */
     animation: fadeIn 1s ease;
 }
-@keyframes fadeIn{
-    0%{opacity: 0;}
-    100%{opacity: 1;}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .container {
@@ -40,15 +46,31 @@ body {
     }
 }
 
-button:hover {
+#one:hover {
     transition: all .4s ease-in-out;
     transform: scale(1.2);
     background: rgb(17, 185, 25);
     color: #000000;
-    box-shadow: 0 0 5px rgb(62, 234, 74), 0 0 25px rgb(19, 121, 33), 0 0 50px rgb(118, 187, 127), 0 0 200px rgb(175, 229, 179);
-    -webkit-box-reflect: below 1px
-    linear-gradient(transparent, #0005)
+    box-shadow:
+        0 0 5px rgb(62, 234, 74),
+        0 0 25px rgb(19, 121, 33),
+        0 0 50px rgb(118, 187, 127),
+        0 0 200px rgb(175, 229, 179);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005)
 }
 
+#two:hover {
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.2);
+    background: rgb(255, 0, 0);
+    color: #ffffff;
+    /* Change text color to white for contrast */
+    box-shadow:
+    0 0 5px rgb(255, 77, 77),
+    0 0 25px rgb(204, 0, 0),
+    0 0 50px rgb(153, 0, 0),
+    0 0 200px rgb(255, 204, 204);
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005)
+}
 
 
